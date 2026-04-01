@@ -22,11 +22,7 @@ jobs:
       run: |
         pip install -r requirements.txt
 
-    - name: Install DVC
-      run: pip install dvc[s3]
-
-    - name: DVC Pull
-      run: dvc pull
+  
 
     - name: Train Model
       run: python src/train.py
